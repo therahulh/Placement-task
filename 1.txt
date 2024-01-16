@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering College Library</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    header {
+      position: relative;
+      text-align: center;
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px;
+    }
+    header img {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      max-width: 80px; /* Adjust the width as needed */
+      height: auto;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    section {
+      margin-top: 20px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    button img {
+      width: 20px;
+      height: 20px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+    }
+  </style>
+  <script>
+    function searchBooks() {
+      var userId = document.getElementById("userId").value;
+      var userName = document.getElementById("userName").value;
+      var bookSearch = document.getElementById("bookSearch").value;
+
+      alert("User ID: " + userId + "\nName: " + userName + "\nBook Search: " + bookSearch);
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <img src="th.jpeg" alt="Engineering College Library Logo">
+    <h1>SVCE College Library</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#csDepartment">Computer Science Department</a></li>
+      <li><a href="#meDepartment">Mechanical Engineering Department</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Our Engineering College Library!</h2>
+    <p>Explore our collection of books and resources across departments.</p>
+  </section>
+
+  <section id="csDepartment">
+    <h2>Computer Science Department</h2>
+    <h3>Book Catalog</h3>
+    <ul>
+      <li>
+        <h4>Introduction to Algorithms</h4>
+        <p><strong>Author:</strong> Thomas H. Cormen</p>
+        <p>An essential guide to algorithm design and analysis.</p>
+      </li>
+      <li>
+        <h4>Database Management Systems</h4>
+        <p><strong>Author:</strong> Raghu Ramakrishnan</p>
+        <p>Covers principles and practices of database management.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="meDepartment">
+    <h2>Mechanical Engineering Department</h2>
+    <h3>Book Catalog</h3>
+    <ul>
+      <li>
+        <h4>Engineering Mechanics</h4>
+        <p><strong>Author:</strong> Ferdinand P. Beer</p>
+        <p>Understanding principles of statics and dynamics in mechanics.</p>
+      </li>
+      <li>
+        <h4>Thermodynamics: An Engineering Approach</h4>
+        <p><strong>Author:</strong> Yunus A. Cengel</p>
+        <p>Covers the principles of thermodynamics in engineering applications.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="search">
+    <h2>Book Search</h2>
+    <form onsubmit="searchBooks(); return false;">
+      <label for="userId">User ID:</label>
+      <input type="text" id="userId" name="userId" placeholder="Enter your ID">
+
+      <label for="userName">Name:</label>
+      <input type="text" id="userName" name="userName" placeholder="Enter your name">
+
+      <label for="bookSearch">Search for a Book:</label>
+      <input type="text" id="bookSearch" name="bookSearch" placeholder="Enter book title">
+
+      <button type="submit"><img src="search-icon.png" alt="Search"></button>
+    </form>
+  </section>
+
+  <section id="events">
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li>
+        <strong>Engineering Expo</strong><br>
+        <em>Date:</em> April 5-7, 2024<br>
+        <em>Time:</em> All day
+      </li>
+      <li>
+        <strong>Guest Lecture Series</strong><br>
+        <em>Date:</em> April 15, 2024<br>
+        <em>Time:</em> 3:00 PM
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach out to us!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Engineering College Library. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
